@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     private Timer _timer;
     private int _score;
     private bool _isPaused = false;
-    private bool _isPlaying = true;
+    public static bool IsPlaying = true;
 
     private void Start()
     {
@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
     
     private void AddSore()
     {
-        if (_isPlaying)
+        if (IsPlaying)
             _score++;
         _scoreText.text = $"Score: {_score}";
 
@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
         if (!_isPaused)
         {
             _isPaused = true;
-            _isPlaying = false;
+            IsPlaying = false;
             _pausePanel.SetActive(true);
             _timer.StopCountingTime();
             _spawner.StopAllCoroutines();
@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
         else if (_isPaused)
         {
             _isPaused = false;
-            _isPlaying = true;
+            IsPlaying = true;
             _pausePanel.SetActive(false);
             _timer.StartCountingTime();
             _spawner.StartCoroutine(_spawner.SpawnElements());
@@ -72,7 +72,7 @@ public class GameManager : MonoBehaviour
     
     private void Win()
     {
-        _isPlaying = false;
+        IsPlaying = false;
         _winPanel.SetActive(true);
         _timer.StopCountingTime();
         _spawner.StopAllCoroutines();
@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
     
     private void Lose()
     {
-        _isPlaying = false;
+        IsPlaying = false;
         _lostPanel.SetActive(true);
         _timer.StopCountingTime();
         _spawner.StopAllCoroutines();

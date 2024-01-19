@@ -15,8 +15,11 @@ public class Player : MonoBehaviour
 
             if (hit.collider.CompareTag("Element"))
             {
-                ElementDestroyed?.Invoke();
-                Destroy(hit.collider.gameObject);
+                if (GameManager.IsPlaying)
+                {
+                    ElementDestroyed?.Invoke();
+                    Destroy(hit.collider.gameObject);
+                }
             }
         }
         
