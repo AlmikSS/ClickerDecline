@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e021e138-bae2-4796-ac0e-64032a446638" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Clicker/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clicker/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Clicker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clicker/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Resources/Prefabs/Circle 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Resources/Prefabs/Circle 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Resources/Prefabs/Circle 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Resources/Prefabs/Circle 2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Resources/Prefabs/Circle 3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Resources/Prefabs/Circle 3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Resources/Prefabs/Circle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Resources/Prefabs/Circle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/ElementSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/ElementSpawner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +27,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/_Scripts/ElementSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Timer.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/ElementSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/GameManager.cs" />
       </list>
     </option>
@@ -37,6 +43,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -68,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1705670704869</updated>
       <workItem from="1705670793919" duration="596000" />
-      <workItem from="1705681671245" duration="3686000" />
+      <workItem from="1705681671245" duration="5321000" />
     </task>
     <servers />
   </component>
@@ -81,10 +88,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="616" y="243" key="run.anything.popup" timestamp="1705684399869">
+    <state x="616" y="243" key="run.anything.popup" timestamp="1705686957861">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1705684399869" />
+    <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1705686957861" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1705683827680">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

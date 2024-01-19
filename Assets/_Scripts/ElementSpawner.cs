@@ -11,7 +11,7 @@ public class ElementSpawner : MonoBehaviour
         StartCoroutine(SpawnElements());
     }
 
-    private IEnumerator SpawnElements()
+    public IEnumerator SpawnElements()
     {
         Vector3 pos = new Vector3(Random.Range(-10, 10), transform.position.y, 0);
         int i = Random.Range(0, _elements.Count);

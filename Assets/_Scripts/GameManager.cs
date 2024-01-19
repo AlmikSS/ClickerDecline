@@ -3,18 +3,31 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [Header("Panels")]
+    [SerializeField] private GameObject _lostPanel;
+    [SerializeField] private GameObject _winPanel;
+    [SerializeField] private GameObject _pausePanel;
+    
+    [Header("Texts")]
     [SerializeField] private TMP_Text _scoreText;
     [SerializeField] private TMP_Text _timerText;
+    
+    [Header("Propertions")]
     [SerializeField] private float _levelTime;
     [SerializeField] private int _elementCountForWin;
+
+    [SerializeField] private ElementSpawner _spawner;
     
-    private static GameManager _instance;
     private Timer _timer;
     private int _score;
+    private bool _isPaused = false;
+    private bool _isPlaying = true;
 
     private void Start()
     {
-        _instance = this;
+        _scoreText.text = $"Score: {_score}";
+        Player.ElementDestroyed += AddSore;
+        Player.PauseButtonPressed += Pause;
         _timer = new Timer(this);
         _timer.Set(_levelTime);
         _timer.HasBeenUpdate += UpdateTimer;
@@ -22,11 +35,6 @@ public class GameManager : MonoBehaviour
         _timer.StartCountingTime();
     }
 
-    private void Lose()
-    {
-        Debug.Log("Los");
-    }
-    
     private void UpdateTimer(float remineTime)
     {
         _timerText.text = $"Time: {Mathf.RoundToInt(remineTime)}";
@@ -34,7 +42,47 @@ public class GameManager : MonoBehaviour
     
     private void AddSore()
     {
-        _instance._score++;
-        _instance._scoreText.text = $"Score: {_instance._score}";
+        if (_isPlaying)
+            _score++;
+        _scoreText.text = $"Score: {_score}";
+
+        if (_score == _elementCountForWin)
+            Win();
+    }
+
+    private void Pause()
+    {
+        if (!_isPaused)
+        {
+            _isPaused = true;
+            _isPlaying = false;
+            _pausePanel.SetActive(true);
+            _timer.StopCountingTime();
+            _spawner.StopAllCoroutines();
+        }
+        else if (_isPaused)
+        {
+            _isPaused = false;
+            _isPlaying = true;
+            _pausePanel.SetActive(false);
+            _timer.StartCountingTime();
+            _spawner.StartCoroutine(_spawner.SpawnElements());
+        }
+    }
+    
+    private void Win()
+    {
+        _isPlaying = false;
+        _winPanel.SetActive(true);
+        _timer.StopCountingTime();
+        _spawner.StopAllCoroutines();
+    }
+    
+    private void Lose()
+    {
+        _isPlaying = false;
+        _lostPanel.SetActive(true);
+        _timer.StopCountingTime();
+        _spawner.StopAllCoroutines();
     }
 }
