@@ -13,7 +13,7 @@ public class ElementSpawner : MonoBehaviour
 
     public IEnumerator SpawnElements()
     {
-        Vector3 pos = new Vector3(Random.Range(-10, 10), transform.position.y, 0);
+        Vector3 pos = new Vector3(Random.Range(-2.7f, 2.7f), transform.position.y, 0);
         int i = Random.Range(0, _elements.Count);
 
         Instantiate(_elements[i], pos, Quaternion.identity);
