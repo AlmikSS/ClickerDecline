@@ -10,6 +10,7 @@
       <e p="Assets" t="Include">
         <e p="_Scripts" t="Include">
           <e p="GamePlay" t="Include">
+            <e p="Element.cs" t="Include" />
             <e p="ElementSpawner.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
             <e p="Player.cs" t="Include" />

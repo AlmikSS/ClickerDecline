@@ -12,26 +12,26 @@ public class Player : MonoBehaviour
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
-
             if (hit.collider != null)
             {
-                if (hit.collider.CompareTag("Element"))
+                if (hit.collider.TryGetComponent(out Element element))
                 {
                     if (GameManager.IsPlaying)
                     {
                         ElementDestroyed?.Invoke();
-                        Destroy(hit.collider.gameObject);
+                        element.Burn();
                     }
                 }
             }
         }
-        
+
         if (Input.GetKeyDown(KeyCode.Escape))
             Pause();
     }
 
     public void Pause()
     {
+        Sender.SendMessage();
         PauseButtonPressed?.Invoke();
     }
 }
