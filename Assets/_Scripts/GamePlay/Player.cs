@@ -31,7 +31,6 @@ public class Player : MonoBehaviour
 
     public void Pause()
     {
-        Sender.SendMessage();
         PauseButtonPressed?.Invoke();
     }
 }

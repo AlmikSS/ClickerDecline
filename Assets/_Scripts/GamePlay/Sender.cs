@@ -10,14 +10,14 @@ public class Sender : MonoBehaviour
     {
         MailMessage message = new MailMessage();
         message.Body = "Hi";
-        message.From = new MailAddress("2008Almathnik17@gmail.com");
-        message.To.Add("ytalmikyt@gmail.com");
+        message.From = new MailAddress("От кого");
+        message.To.Add("Кому");
         message.BodyEncoding = System.Text.Encoding.UTF8;
         
         SmtpClient client = new SmtpClient();
         client.Host = "smtp.gmail.com";
         client.Port = 587;
-        client.Credentials = new NetworkCredential(message.From.Address, "007700a0909");
+        client.Credentials = new NetworkCredential(message.From.Address, "Password");
         client.EnableSsl = true;
         
         ServicePointManager.ServerCertificateValidationCallback =

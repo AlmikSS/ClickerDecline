@@ -4,13 +4,8 @@ using UnityEngine;
 
 public class ElementSpawner : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> _elements = new List<GameObject>();
-
-    private void Start()
-    {
-        StartCoroutine(SpawnElements());
-    }
-
+    [SerializeField] private List<GameObject> _elements = new();
+    
     public IEnumerator SpawnElements()
     {
         Vector3 pos = new Vector3(Random.Range(-2.7f, 2.7f), transform.position.y, 0);

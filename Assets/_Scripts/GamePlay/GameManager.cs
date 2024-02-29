@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -10,7 +11,8 @@ public class GameManager : MonoBehaviour
     
     [Header("Texts")]
     [SerializeField] private TMP_Text _scoreText;
-    [SerializeField] private TMP_Text _timerText;
+    [SerializeField] private TMP_Text _levelTimerText;
+    [SerializeField] private TMP_Text _startTimerText;
     
     [Header("Propertions")]
     [SerializeField] private float _levelTime;
@@ -25,6 +27,31 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        _levelTimerText.text = $"Time: {Mathf.RoundToInt(_levelTime)}";
+        _scoreText.text = $"Score: {_score}";
+
+        StartCoroutine(StartLevel());
+    }
+
+    private IEnumerator StartLevel()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            _startTimerText.text = (i + 1).ToString();
+            yield return new WaitForSeconds(1);
+        }
+
+        _startTimerText.text = "Жги!";
+        _scoreText.gameObject.GetComponent<Animator>().Play("GoToIdle");
+        _levelTimerText.gameObject.GetComponent<Animator>().Play("GoToIdle");
+        yield return new WaitForSeconds(1);
+        _startTimerText.gameObject.SetActive(false);
+        StartTimer();
+        StartCoroutine(_spawner.SpawnElements());
+    }
+    
+    private void StartTimer()
+    {
         _scoreText.text = $"Score: {_score}";
         Player.ElementDestroyed += AddSore;
         Player.PauseButtonPressed += Pause;
@@ -37,7 +64,7 @@ public class GameManager : MonoBehaviour
 
     private void UpdateTimer(float remineTime)
     {
-        _timerText.text = $"Time: {Mathf.RoundToInt(remineTime)}";
+        _levelTimerText.text = $"Time: {Mathf.RoundToInt(remineTime)}";
     }
     
     private void AddSore()
@@ -66,7 +93,7 @@ public class GameManager : MonoBehaviour
             IsPlaying = true;
             _pausePanel.SetActive(false);
             _timer.StartCountingTime();
-            _spawner.StartCoroutine(_spawner.SpawnElements());
+            StartCoroutine(_spawner.SpawnElements());
         }
     }
     

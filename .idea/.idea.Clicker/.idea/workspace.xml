@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,14 +23,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e021e138-bae2-4796-ac0e-64032a446638" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Clicker/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clicker/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Clicker/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Clicker/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clicker/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Clicker/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Clicker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clicker/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Resources/Prefabs/Ccal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Resources/Prefabs/Ccal.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Resources/Prefabs/Fire.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Resources/Prefabs/Fire.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Clicker/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Resources/Animations/Fire.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Resources/Animations/Fire.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Resources/Animations/Idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Resources/Animations/Idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/GamePlay/ElementSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/GamePlay/ElementSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/GamePlay/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/GamePlay/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/GamePlay/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/GamePlay/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/GamePlay/Sender.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/GamePlay/Sender.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,31 +64,64 @@
         <option value="$PROJECT_DIR$/Assets/_Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/GamePlay/ElementSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/GamePlay/Sender.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/GamePlay/Element.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/GamePlay/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/GamePlay/Sender.cs" />
       </list>
     </option>
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 4
+}]]></component>
   <component name="ProjectId" id="2bAvSnCdgd788sfGLvs5KR12qD6" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="Discover.Launch.Via.Unity" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "git-widget-placeholder": "AlmikSSDeveloper",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\AlmikSS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\AlmikSS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\AlmikSS\\AppData\\Local\\Symbols\\src"
+    ]
+  }
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.16f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\AlmikSS\Clicker -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\AlmikSS\Clicker" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.16f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\AlmikSS\Clicker -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\AlmikSS\Clicker" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
-        <set />
+        <list />
       </option>
       <method v="2" />
     </configuration>
@@ -84,8 +129,9 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
-        <set />
+        <list />
       </option>
       <method v="2" />
     </configuration>
@@ -100,7 +146,8 @@
       <updated>1705670704869</updated>
       <workItem from="1705670793919" duration="596000" />
       <workItem from="1705681671245" duration="6073000" />
-      <workItem from="1708016005839" duration="2738000" />
+      <workItem from="1708016005839" duration="4291000" />
+      <workItem from="1709223628792" duration="3666000" />
     </task>
     <servers />
   </component>
