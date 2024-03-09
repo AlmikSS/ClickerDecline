@@ -19,7 +19,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int _elementCountForWin;
 
     [SerializeField] private ElementSpawner _spawner;
-    
+
+    private Sender _sender = new();
     private Timer _timer;
     private int _score;
     private bool _isPaused = false;
@@ -30,14 +31,16 @@ public class GameManager : MonoBehaviour
         _levelTimerText.text = $"Time: {Mathf.RoundToInt(_levelTime)}";
         _scoreText.text = $"Score: {_score}";
 
+        _sender.SendRegisterPost();
+        
         StartCoroutine(StartLevel());
     }
 
     private IEnumerator StartLevel()
     {
-        for (int i = 0; i < 3; i++)
+        for (int i = 3; i > 0; i--)
         {
-            _startTimerText.text = (i + 1).ToString();
+            _startTimerText.text = (i).ToString();
             yield return new WaitForSeconds(1);
         }
 
