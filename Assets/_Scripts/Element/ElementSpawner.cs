@@ -11,7 +11,9 @@ public class ElementSpawner : MonoBehaviour
         Vector3 pos = new Vector3(Random.Range(-2.7f, 2.7f), transform.position.y, 0);
         int i = Random.Range(0, _elements.Count);
 
-        Instantiate(_elements[i], pos, Quaternion.identity);
+        GameObject element = Instantiate(_elements[i], pos, Quaternion.identity, transform);
+        Destroy(element, 15f);
+        
         yield return new WaitForSeconds(.5f);
         StartCoroutine(SpawnElements());
     }

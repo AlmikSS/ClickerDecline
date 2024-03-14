@@ -10,6 +10,12 @@ public class Element : MonoBehaviour
         GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         _fireObj.SetActive(true);
         GetComponent<SpriteRenderer>().enabled = false;
-        Destroy(gameObject, 0.20f);
+        Destroy(gameObject, 0.25f);
+    }
+
+    private void Update()
+    {
+        if (!GameManager.IsPlaying)
+            Destroy(gameObject);
     }
 }
